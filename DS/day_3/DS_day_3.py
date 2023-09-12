@@ -1,18 +1,18 @@
-# #  Question 1
-# class PersonNode:
-#     def __init__(self, name, age, next_node=None):
-#         self.name = name
-#         self.age = age
-#         self.next_node = next_node
-#         pass
+#  Question 1
+class PersonNode:
+    def __init__(self, name, age, next_node=None):
+        self.name = name
+        self.age = age
+        self.next_node = next_node
+        pass
 
-#     def __repr__(self):
-#         res = (self.name, self.age)
-#         return repr(res)
+    def __repr__(self):
+        res = (self.name, self.age)
+        return repr(res)
 
 
-# p1 = PersonNode("sobhi", "18")
-# print(p1)
+p1 = PersonNode("sobhi", "18")
+print(p1)
 
 
 # # # Question 2

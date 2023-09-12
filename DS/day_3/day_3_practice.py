@@ -41,20 +41,22 @@
 #         if self.head != None:
 #             self.head = self.head.get_next()
 
-#     def remove_at(self,i):
-#         if i == 0:
-#             self.remove_first()
-#         if i > self.__len__():
-#             return None
-#         current = self.head
-#         count = 0
-#         while count < i - 1:
-#             count += 1
-#             current = current.get_next()
-#         elem_to_remove = current.get_next()
-#         current.set_next(elem_to_remove.get_next())
 
-#         return elem_to_remove.det_data()
+def remove_at(self, i):
+    if i == 0:
+        self.remove_first()
+    if i > self.__len__():
+        return None
+    current = self.head
+    count = 0
+    while count < i - 1:
+        count += 1
+        current = current.get_next()
+    elem_to_remove = current.get_next()
+    current.set_next(elem_to_remove.get_next())
+
+    return elem_to_remove.det_data()
+
 
 #     def __len__(self):
 #         current = self.head
@@ -103,15 +105,16 @@
 # #     else:
 # #         return find_helper(node.get_next(), item)
 
-#     def remove_last(self):
-#         if self.head == None:
-#             return None
-#         if self.head.get_next() == None:
-#             self.head = None
-#             return None
-#         prev = self.head
-#         current = self.head.get_next()
-#         while current.get_next() is not None:
-#             current = current.get_next()
-#         prev.set_next = None
-#         return current.get_data()
+
+def remove_last(self):
+    if self.head == None:
+        return None
+    if self.head.get_next() == None:
+        self.head = None
+        return None
+    prev = self.head
+    current = self.head.get_next()
+    while current.get_next() is not None:
+        current = current.get_next()
+    prev.set_next = None
+    return current.get_data()
