@@ -1,68 +1,66 @@
-#  Question 1
-class PersonNode:
-    def __init__(self, name, age, next_node=None):
-        self.name = name
-        self.age = age
-        self.next_node = next_node
+# #  Question 1
+# class PersonNode:
+#     def __init__(self, name, age, next_node=None):
+#         self.name = name
+#         self.age = age
+#         self.next_node = next_node
+
+#     def __repr__(self):
+#         return f"PersonNode({self.name}, {self.age}, {self.next_node})"
+
+
+# p1 = PersonNode("sobhi", "18")
+# print(p1)
+
+
+# # Question 2
+class PersonList:
+    def __init__(
+        self,
+        head=None,
+    ):
+        self.head = head
+        self.next = None
         pass
 
     def __repr__(self):
         res = (self.name, self.age)
         return repr(res)
 
+    pass
 
-p1 = PersonNode("sobhi", "18")
+    def add(self, name, age):
+        new_person = PersonList(name, age)
+        if self.head is None:
+            self.head = new_person
+
+        last = self.head
+        while last is not None:
+            last = last.next
+
+        last.next = new_person
+
+    pass
+
+    def list_length(self):
+        current = self.head
+        count = 0
+        while current is not None:
+            count += 1
+            current = current.next
+        return count
+
+    pass
+
+    def copy_list(self):
+        """
+        Create and return a deep copy of the list. Do not use the copy module of python.
+        """
+        pass
+
+
+p1 = PersonList.add(("gogo"), ("18"))
 print(p1)
-
-
-# # # Question 2
-# class PersonList:
-#     def __init__(
-#         self,
-#         head=None,
-#     ):
-#         self.head = head
-#         self.next = None
-#         pass
-
-#     def __repr__(self):
-#         res = (self.name, self.age)
-#         return repr(res)
-
-#     pass
-
-#     def add(self, name, age):
-#         new_person = PersonList(name, age)
-#         if self.head is None:
-#             self.head = new_person
-
-#         last = self.head
-#         while last is not None:
-#             last = last.next
-
-#         last.next = new_person
-
-#     pass
-
-#     def list_length(self):
-#         current = self.head
-#         count = 0
-#         while current is not None:
-#             count += 1
-#             current = current.next
-#         return count
-
-#     pass
-
-#     def copy_list(self):
-#         """
-#   Create and return a deep copy of the list. Do not use the copy module of python.
-#         """
-#         pass
-
-
-# p1 = PersonList.add(("gogo"), ("18"))
-# print(p1)
 
 #   #  # Question 4
 #     def print_line(self):

@@ -1,6 +1,3 @@
-## linkedList
-
-
 # List Node Constructor
 class ListNode:
     def __init__(self, value, next=None):
@@ -41,7 +38,7 @@ def git_E_by_index(head, index):
         print("error")
 
 
-def git_E_by_value(head, value):  ### NOT WORKING
+def git_E_by_value(head, value):
     curr = head
     index = 0
     while curr is not None:

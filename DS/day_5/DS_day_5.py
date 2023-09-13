@@ -5,51 +5,45 @@ class BinNode:
         self.right = right
 
 
-# def height(root: BinNode):
-#     if root is None:
-#         return 0
+def height(root: BinNode):
+    if root is None:
+        return 0
 
-#     return max(height(root.left), height(root.right)) + 1
-
-
-# if left > right:
-#     return left + 1
-# else:
-#     return right + 1
+    return max(height(root.left), height(root.right)) + 1
 
 
-# bt = BinNode(1)
-# bt.left = BinNode(2)
-# bt.right = BinNode(3)
-# print(height(bt))
+bt = BinNode(1)
+bt.left = BinNode(2)
+bt.right = BinNode(3)
+print(height(bt))
 
 
-# def count_nodes(root: BinNode):
-#     if root is None:
-#         return 0
+def count_nodes(root: BinNode):
+    if root is None:
+        return 0
 
-#     left = count_nodes(root.left)
-#     right = count_nodes(root.right)
+    left = count_nodes(root.left)
+    right = count_nodes(root.right)
 
-#     return left + right + 1
-
-
-# bt = BinNode(1)
-# bt.left = BinNode(2)
-# bt.right = BinNode(3)
-# print(count_nodes(bt))
+    return left + right + 1
 
 
-# def min_depth(root: BinNode):
-#     if root is None:
-#         return 0
-#     return min(min_depth(root.left), min_depth(root.right)) + 1
+bt = BinNode(1)
+bt.left = BinNode(2)
+bt.right = BinNode(3)
+print(count_nodes(bt))
 
 
-# bt = BinNode(1)
-# bt.left = BinNode(2)
-# bt.right = BinNode(3)
-# print(min_depth(bt))
+def min_depth(root: BinNode):
+    if root is None:
+        return 0
+    return min(min_depth(root.left), min_depth(root.right)) + 1
+
+
+bt = BinNode(1)
+bt.left = BinNode(2)
+bt.right = BinNode(3)
+print(min_depth(bt))
 
 
 def convert_array_to_binary_tree(arr):

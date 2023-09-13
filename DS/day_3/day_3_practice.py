@@ -42,20 +42,20 @@
 #             self.head = self.head.get_next()
 
 
-def remove_at(self, i):
-    if i == 0:
-        self.remove_first()
-    if i > self.__len__():
-        return None
-    current = self.head
-    count = 0
-    while count < i - 1:
-        count += 1
-        current = current.get_next()
-    elem_to_remove = current.get_next()
-    current.set_next(elem_to_remove.get_next())
+# def remove_at(self, i):
+#     if i == 0:
+#         self.remove_first()
+#     if i > self.__len__():
+#         return None
+#     current = self.head
+#     count = 0
+#     while count < i - 1:
+#         count += 1
+#         current = current.get_next()
+#     elem_to_remove = current.get_next()
+#     current.set_next(elem_to_remove.get_next())
 
-    return elem_to_remove.det_data()
+#     return elem_to_remove.det_data()
 
 
 #     def __len__(self):
