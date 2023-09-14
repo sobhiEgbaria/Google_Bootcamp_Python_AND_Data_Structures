@@ -5,7 +5,7 @@ class PersonNode:
         self.next_node = next_node
 
     def __repr__(self):
-        return f"PersonNode({self.name}, {self.age}, {self.next_node})"
+        return f'PersonNode({self.name}, {self.age}, {self.next_node})'
 
 
 class PersonList:
@@ -16,7 +16,7 @@ class PersonList:
         node = self.head
         nodes = []
         while node is not None:
-            nodes.append(f"PersonNode({node.name}, {node.age})")
+            nodes.append(f'PersonNode({node.name}, {node.age})')
             node = node.next_node
         nodes.append("None")
         return " -> ".join(nodes)
@@ -31,6 +31,7 @@ class PersonList:
             node.next_node = PersonNode(name, age)
 
     def list_length(self):
+
         def help_length(node: PersonNode):
             if node is None:
                 return 0
@@ -129,9 +130,9 @@ class PersonList:
 
     def contains_loop(self):
         """
-        We maintain two pointers, slow_ptr and fast_ptr.
-        slow_ptr moves one step at a time while fast_ptr moves two steps at a time.
-        If there is a loop in the list, fast_ptr will eventually meet slow_ptr.
+        We maintain two pointers, slow_ptr and fast_ptr. 
+        slow_ptr moves one step at a time while fast_ptr moves two steps at a time. 
+        If there is a loop in the list, fast_ptr will eventually meet slow_ptr. 
         If there is no loop, fast_ptr will reach the end of the list.
         """
         if self.head is None:
