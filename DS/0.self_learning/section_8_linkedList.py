@@ -52,6 +52,20 @@ def add_E_by_index(head, value, index):
     return head
 
 
+def revers_singly_linkedList(head):
+    if head.next is None:
+        return head
+    prev = None
+    curr = head
+    while curr is not None:
+        temp_node = curr.next
+        curr.next = prev
+        prev = curr
+        curr = temp_node
+    head = prev
+    return head
+
+
 ## git element by index:
 # def git_E_by_index(head, index):
 #     curr = head
@@ -94,17 +108,20 @@ def add_E_by_index(head, value, index):
 #     return head
 
 
-node1 = ListNode(5)
-head = node1
-tail = head
+# node1 = ListNode(5)
+# head = node1
+# tail = head
 
-head = add_E_by_index(head, 1, 0)
-head = add_to_last(head, 10)
-head = add_to_last(head, 11)
-head = add_E_by_index(head, 1111111111111, 4)
+# head = add_E_by_index(head, 1, 0)
+# head = add_to_last(head, 10)
+# head = add_to_last(head, 11)
+# head = add_E_by_index(head, 1111111111111, 4)
 
 
-print_list(head)
+# print_list(head)
+# print("======> ")
+# head = revers_singly_linkedList(head)
+# print_list(head)
 
 # git_E_by_index(head, 4)
 
@@ -166,7 +183,7 @@ print_list(head)
 #                 return add_to_last(head, value)
 #         cur_next = (
 #             cur.next
-#         )  # the cur is 1 E befor the new_node. the cur_next 1 e after the new_node
+#         )  # the cur is 1 E before the new_node. the cur_next 1 e after the new_node
 #         new_node.next = cur_next
 #         cur.next = new_node
 #         new_node.prev = cur

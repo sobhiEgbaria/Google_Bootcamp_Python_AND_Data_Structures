@@ -106,15 +106,15 @@
 # #         return find_helper(node.get_next(), item)
 
 
-def remove_last(self):
-    if self.head == None:
-        return None
-    if self.head.get_next() == None:
-        self.head = None
-        return None
-    prev = self.head
-    current = self.head.get_next()
-    while current.get_next() is not None:
-        current = current.get_next()
-    prev.set_next = None
-    return current.get_data()
+# def remove_last(self):
+#     if self.head == None:
+#         return None
+#     if self.head.get_next() == None:
+#         self.head = None
+#         return None
+#     prev = self.head
+#     current = self.head.get_next()
+#     while current.get_next() is not None:
+#         current = current.get_next()
+#     prev.set_next = None
+#     return current.get_data()
