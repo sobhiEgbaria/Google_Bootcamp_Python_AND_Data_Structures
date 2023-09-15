@@ -43,56 +43,57 @@
 # print(new_stack.get_top())
 # print(new_stack.is_Empty())
 
-# implementation stack with linked list ((linked stack))
+
+#### implementation stack with linked list ((linked stack))
 
 
-# class Stack:
-#     def __init__(self, value, next=None) -> None:
-#         self.value = value
-#         self.next = next
-#         self.top = None
+class Stack:
+    def __init__(self, value=None, next=None) -> None:
+        self.value = value
+        self.next = next
+        self.top = None
 
-#     def is_Empty(self):
-#         return self.top == 0
+    def is_Empty(self):
+        return self.top == 0
 
-#     def push(self, value):
-#         new_node = Stack(value)
-#         new_node.next = self.top
-#         self.top = new_node
+    def push(self, value):
+        new_node = Stack(value)
+        new_node.next = self.top
+        self.top = new_node
 
-#     def pop(self):
-#         if self.is_Empty():
-#             print("the stack is empty")
-#             return None
-#         else:
-#             self.top = self.top.next
+    def pop(self):
+        if self.is_Empty():
+            print("the stack is empty")
+            return None
+        else:
+            self.top = self.top.next
 
-#     def pop_with_save_value(self):
-#         if self.is_Empty():
-#             print("the stack is empty")
-#             return None
-#         else:
-#             top_value = self.top.value
-#             self.top = self.top.next
-#         return top_value
+    def pop_with_save_value(self):
+        if self.is_Empty():
+            print("the stack is empty")
+            return None
+        else:
+            top_value = self.top.value
+            self.top = self.top.next
+        return top_value
 
-#     def get_top(self):
-#         if self.is_Empty():
-#             print("the stack is empty")
-#             return None
-#         else:
-#             top_value = self.top.value
-#         return top_value
+    def get_top(self):
+        if self.is_Empty():
+            print("the stack is empty")
+            return None
+        else:
+            top_value = self.top.value
+        return top_value
 
-#     def display(self):
-#         if self.is_Empty():
-#             print("the stack is empty")
-#             return None
-#         else:
-#             cur = self.top
-#             while cur is not None:
-#                 print(cur.value)
-#                 cur = cur.next
+    def display(self):
+        if self.is_Empty():
+            print("the stack is empty")
+            return None
+        else:
+            cur = self.top
+            while cur is not None:
+                print(cur.value)
+                cur = cur.next
 
 
 # new_stack = Stack(10)
@@ -103,6 +104,34 @@
 # new_stack.display()
 # print(new_stack.get_top())
 
+"""
+first problem:
+url:
+https://www.youtube.com/watch?v=PLvD3pHaWHQ&list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&index=8
+
+problem name: 
+
+Balanced Parentheses Using Stack {([ ])}
+
+
+"""
+
+
+# def is_balanced(expression): ### not working
+#     new_stack = Stack()
+
+#     for i in expression:
+#         if i == "(" or i == "{" or i == "[":
+#             new_stack.push(i)
+#         else:
+#             if i == ")" or "}" or "]" and i == new_stack.top.value:
+#                 new_stack.pop()
+#                 new_stack.display()
+
+#     return new_stack.is_Empty()
+
+
+# print(is_balanced("([])"))
 
 ## => => => => => => => => => => => => => => => => => => => => => => => => => => => => => => => => =>
 
