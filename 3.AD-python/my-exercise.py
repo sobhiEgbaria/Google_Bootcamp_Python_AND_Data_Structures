@@ -349,14 +349,45 @@ Rotate a word
 """
 
 
-def progress_bar(width, total, completed):
-    completed_part = round((completed / total * width))
-    completed_symbol = "#"
-    uncompleted_symbol = "-"
+# def progress_bar(width, total, completed):
+#     completed_part = round((completed / total * width))
+#     completed_symbol = "#"
+#     uncompleted_symbol = "-"
 
-    return f"{completed_symbol * completed_part}{uncompleted_symbol*(width-completed_part)}"
+#     return f"{completed_symbol * completed_part}{uncompleted_symbol*(width-completed_part)}"
 
 
-print(progress_bar(20, 10, 4))
+# print(progress_bar(20, 10, 4))
+
+# # ===============================================================================
+"""
+Nachmanize
+"""
+
+# def nachmanize(str):
+#     str_nachmanize = ""
+#     for i in range(len(str) + 1):
+#         str_nachmanize += str[:i] + " "
+#     return str_nachmanize
+
+
+# print(nachmanize("abcd"))
+
+# # ===============================================================================
+
+"""
+ advance Progress Bar
+"""
+
+
+# def progress_bar(width, total, completed):
+#     completed_part = round((completed / total * width))
+#     completed_symbol = "#"
+#     uncompleted_symbol = "-"
+
+#     return f"{completed_symbol * completed_part}{uncompleted_symbol*(width-completed_part)}"
+
+
+# print(progress_bar(17, 100, 4))
 
 # # ===============================================================================
