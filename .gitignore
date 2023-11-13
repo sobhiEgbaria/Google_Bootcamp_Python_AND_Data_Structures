@@ -1,3 +1,4 @@
 .idea/
 .vscode/
-.bot_settings.py/
+bot_settings.py
+.telegram_Age_bot\bot_settings.py/
