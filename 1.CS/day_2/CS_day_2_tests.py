@@ -85,41 +85,41 @@ def test_print_combined_pattern():
     assert capturedOutput.getvalue() == "  *\n **\n***\n***\n **\n  *\n"
 
 
-if __name__ == "__main__":
-    # test_print_numbers_while()
-    # print("Passed test_print_numbers_while")
+# if __name__ == "__main__":
+#     # test_print_numbers_while()
+#     # print("Passed test_print_numbers_while")
 
-    # test_print_numbers_for()
-    # print("Passed test_print_numbers_for")
+#     # test_print_numbers_for()
+#     # print("Passed test_print_numbers_for")
 
-    # test_count_vowels()
-    # print("Passed test_count_vowels")
+#     # test_count_vowels()
+#     # print("Passed test_count_vowels")
 
-    # test_sum_numbers_while()
-    # print("Passed test_sum_numbers_while")
+#     # test_sum_numbers_while()
+#     # print("Passed test_sum_numbers_while")
 
-    # test_print_multiplication_table()
-    # print("Passed test_print_multiplication_table")
+#     # test_print_multiplication_table()
+#     # print("Passed test_print_multiplication_table")
 
-    # test_calculate_average()
-    # print("Passed test_calculate_average")
+#     # test_calculate_average()
+#     # print("Passed test_calculate_average")
 
-    # test_print_reverse_string()
-    # print("Passed print_reverse_string")
+#     # test_print_reverse_string()
+#     # print("Passed print_reverse_string")
 
-    # test_is_prime()
-    # print("Passed test_is_prime")
+#     # test_is_prime()
+#     # print("Passed test_is_prime")
 
-    # test_filter_strings()
-    # print("Passed test_filter_strings")
+#     # test_filter_strings()
+#     # print("Passed test_filter_strings")
 
-    # test_print_triangle()
-    # print("Passed test_print_triangle")
+#     # test_print_triangle()
+#     # print("Passed test_print_triangle")
 
-    # test_print_opposite_triangle()
-    # print("Passed test_print_opposite_triangle")
+#     # test_print_opposite_triangle()
+#     # print("Passed test_print_opposite_triangle")
 
-    # test_print_combined_pattern()
-    # print("Passed test_print_combined_pattern")
+#     # test_print_combined_pattern()
+#     # print("Passed test_print_combined_pattern")
 
-    # print("Passed all tests!!!")
+#     # print("Passed all tests!!!")
